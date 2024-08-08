@@ -1,6 +1,6 @@
 body {
         margin: 0;
-        padding-bottom: 60px; /* Adjust the value as needed */
+        padding-bottom: 60px; 
     }
 
 .img{
@@ -45,15 +45,15 @@ section {
     width: 300px;
 }
 section#about {
-    background: #f4f4f4;
+    background: white;
 }
 
 section#properties {
-    background: #e2e2e2;
+    background: white;
 }
 
 section#contact {
-    background: #d1d1d1;
+    background: whitesmoke;
 }
 
 form {
@@ -93,4 +93,46 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+@media (max-width: 768px) {
+    .header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        width: 100%;
+        text-align: center;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    form input, form textarea, form button {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header nav ul {
+        gap: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    form input, form textarea, form button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 15px 5px;
+    }
 }
